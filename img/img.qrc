@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>texture/bianzhiwu.bmp</file>
+        <file>texture/haubu.bmp</file>
+        <file>texture/huagangyan.bmp</file>
+        <file>texture/shensemu.bmp</file>
+        <file>texture/shuidi.bmp</file>
+        <file>texture/xiewenbu.bmp</file>
+        <file>texture/xinzhi.bmp</file>
+        <file>texture/zaishengzhi.bmp</file>
+        <file>texture/zhidai.bmp</file>
+    </qresource>
+</RCC>
