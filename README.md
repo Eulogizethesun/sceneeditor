@@ -3,6 +3,8 @@
  
  基于OpenGL API，采⽤C/C++，WebGL模式，构建⼀个完整的CG世界；即实现⼀个三维场景建模及真实感绘制的系统。
  
+ ![ ](https://github.com/Eulogizethesun/sceneeditor/blob/master/pic/1.png)
+ 
  ## 1. 基于OpenGL/WebGL，具有基本体素（⽴⽅体、球、圆柱、圆锥、多⾯棱 柱、多⾯棱台）的建模表达能⼒；
 定义了一个 GeoObj 类，用于存储单个几何体。每个 GeoObj 类中含有顶点序列 vs，面的序列 fs，颜色（RGBA）和材质编号。添加 GeoObj 时，其中的顶点和面统一从一个池 (Pool 类) 中分配。这样不仅能方便相邻的面共用顶点，而且顶点和面的编号也便于管理，为之后导出 obj 文件作好了准备。
 Pool 类中定义了 newVertex() 和 newFace() 方法。Vertex 类中包含顶点编号（用于导出 obj）、点的坐标、法向（用于光照计算），Vertex 类的方法主要是三种几何变换（平移、缩放、旋转）。Face 类中包含面的编号、组成该面的点的序列，以及每个点对应的纹理空间中的点 (tx, ty)。
